@@ -12,7 +12,7 @@ HEADER_FILES := $(wildcard *.h)
 OBJECT_FILES := $(patsubst %.cpp,%.o,$(SRC_FILES))
 
 # Flags for compiler optimize for speed
-CPP_FLAGS := -oFast
+CPP_FLAGS := -oFast -std=gnu++17
 
 # Compile .cpp files
 %.o: %.cpp $(HEADER_FILES)

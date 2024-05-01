@@ -1,9 +1,10 @@
-#include <iostream>
 #include "bitboard.h"
 
-int main ()
-{
-    std::printf("bitboard.h\n");
-    getchar();
+#include <iostream>
+
+int main () {
+    Bitboard b = 0ULL;
+    std::string s = Bitboards::display(b);
+    std::cout << s << std::endl;
     return 0;
-}
+}   
